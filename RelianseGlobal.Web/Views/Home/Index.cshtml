@@ -1,7 +1,852 @@
-﻿@section SPAViews {
-    @Html.Partial("_Home")
-}
+﻿
 @section Scripts{
     @Scripts.Render("~/bundles/knockout")
     @Scripts.Render("~/bundles/app")
 }
+
+
+<section class="no-padding adv-search-section">
+    <!-- Slider main container -->
+    <div id="swiper2" class="swiper-container">
+        <div class="container swiper2-navigation">
+            <div class="row">
+                <div class="col-xs-2">
+                    <a href="#" class="navigation-box2 navigation-box-prev slide-prev"><div class="navigation-triangle"></div><div class="navigation-box-icon2"><i class="jfont">&#xe800;</i></div></a>
+                </div>
+                <div class="col-xs-2 col-xs-offset-8">
+                    <a href="#" class="navigation-box2 navigation-box-next slide-next"><div class="navigation-triangle"></div><div class="navigation-box-icon2"><i class="jfont">&#xe802;</i></div></a>
+                </div>
+            </div>
+        </div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-lazy" data-background="images/slides/1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 animated fadeInDown slide2-desc slide2-desc-1">
+                            <h1 class="second-color">Fort Collins, Colorado 80523<span class="special-color">.</span></h1>
+                            <div class="clearfix"></div>
+                            <p class="swiper2-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="swiper2-buttons margin-top-45">
+                                <div class="swiper2-price-button">$320 000</div>
+
+                                <a href="estate-details-right-sidebar.html" class="button-primary">
+                                    <span>read more</span>
+                                    <div class="button-triangle"></div>
+                                    <div class="button-triangle2"></div>
+                                    <div class="button-icon"><i class="fa fa-search"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-overlay"></div>
+            </div>
+            <div class="swiper-slide swiper-lazy" data-background="images/slides/2.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 animated slide2-desc slide2-desc-2">
+                            <h1 class="second-color">West Fourth Street, New York 10003<span class="special-color">.</span></h1>
+                            <div class="clearfix"></div>
+                            <p class="swiper2-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="swiper2-buttons margin-top-45">
+                                <div class="swiper2-price-button">$550 000</div>
+
+                                <a href="estate-details-right-sidebar.html" class="button-primary">
+                                    <span>read more</span>
+                                    <div class="button-triangle"></div>
+                                    <div class="button-triangle2"></div>
+                                    <div class="button-icon"><i class="fa fa-search"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-overlay"></div>
+                <div class="video-slide">
+                    <video poster="images/slides/2.jpg" preload="auto" loop autoplay muted>
+                        <source src='images/slides/2.mp4' type='video/mp4' />
+                    </video>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-lazy" data-background="images/slides/3.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 animated slide2-desc slide2-desc-3">
+                            <h1 class="second-color">E. Elwood St. Phoenix, AZ 85034<span class="special-color">.</span></h1>
+                            <div class="clearfix"></div>
+                            <p class="swiper2-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="swiper2-buttons margin-top-45">
+                                <div class="swiper2-price-button">$395 000</div>
+
+                                <a href="estate-details-right-sidebar.html" class="button-primary">
+                                    <span>read more</span>
+                                    <div class="button-triangle"></div>
+                                    <div class="button-triangle2"></div>
+                                    <div class="button-icon"><i class="fa fa-search"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-overlay"></div>
+            </div>
+        </div>
+    </div>
+
+    <form class="simple-search-form" action="#">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="simple-search-cont">
+                        <select name="transaction1" class="bootstrap-select" title="Transaction:" multiple>
+                            <option>For sale</option>
+                            <option>For rent</option>
+                        </select>
+                        <input type="text" name="simple-search" class="simple-search-input" placeholder="... Write localization, eg. New York ..." />
+                        <a href="estate-details-right-sidebar.html" class="button-primary pull-right">
+                            <span>search</span>
+                            <div class="button-triangle"></div>
+                            <div class="button-triangle2"></div>
+                            <div class="button-icon"><i class="fa fa-search"></i></div>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+<section class="section-light bottom-padding-45 section-both-shadow">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature2 wow fadeInLeft" id="feature1">
+                    <div class="feature2-icon"><i class="fa fa-building"></i></div>
+                    <div class="feature2-text">
+                        <h4>PIXEL PERFECT DESIGN<span class="special-color">.</span></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature2 wow fadeInUp" id="feature2">
+                    <div class="feature2-icon"><i class="fa fa-home"></i></div>
+                    <div class="feature2-text">
+                        <h4>50 HTML FILES<span class="special-color">.</span></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature2 wow fadeInRight" id="feature3">
+                    <div class="feature2-icon"><i class="fa fa-industry"></i></div>
+                    <div class="feature2-text">
+                        <h4>MASONRY, LIST &amp; GRID<span class="special-color">.</span></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature2 wow fadeInLeft" id="feature4">
+                    <div class="feature2-icon"><i class="fa fa-tree"></i></div>
+                    <div class="feature2-text">
+                        <h4>MODERN CLEAN PROJECT<span class="special-color">.</span></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature2 wow fadeInUp" id="feature5">
+                    <div class="feature2-icon"><i class="fa fa-gears"></i></div>
+                    <div class="feature2-text">
+                        <h4>3 BLOG STYLES<span class="special-color">.</span></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature2 wow fadeInRight" id="feature6">
+                    <div class="feature2-icon"><i class="fa fa-pie-chart"></i></div>
+                    <div class="feature2-text">
+                        <h4>6 HOMEPAGES<span class="special-color">.</span></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="featured-offers parallax">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-3 col-sm-6 text-center">
+                <h5 class="subtitle-margin second-color">highly recommended</h5>
+                <h1 class="second-color">featured offers<span class="special-color">.</span></h1>
+            </div>
+            <div class="col-xs-12 col-sm-3 navigation-box2-cont">
+                <a href="#" class="navigation-box2 navigation-box-next" id="featured-offers-owl-next"><div class="navigation-triangle"></div><div class="navigation-box-icon2"><i class="jfont">&#xe802;</i></div></a>
+                <a href="#" class="navigation-box2 navigation-box-prev" id="featured-offers-owl-prev"><div class="navigation-triangle"></div><div class="navigation-box-icon2"><i class="jfont">&#xe800;</i></div></a>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-offset-4 col-sm-4">
+                <div class="title-separator-secondary2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="featured-offers-container">
+        <div class="owl-carousel" id="featured-offers-owl">
+            <div class="featured-offer-col">
+                <div class="featured-offer-front">
+                    <div class="featured-offer-photo">
+                        <img src="images/featured-offer1.jpg" alt="" />
+                        <div class="type-container">
+                            <div class="estate-type">apartment</div>
+                            <div class="transaction-type">sale</div>
+                        </div>
+                    </div>
+                    <div class="featured-offer-text">
+                        <h4 class="featured-offer-title">250 South Dr, Fort Collins, Colorado 80523, USA</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="featured-offer-params">
+                        <div class="featured-area">
+                            <img src="images/area-icon.png" alt="" />54m<sup>2</sup>
+                        </div>
+                        <div class="featured-rooms">
+                            <img src="images/rooms-icon.png" alt="" />3
+                        </div>
+                        <div class="featured-baths">
+                            <img src="images/bathrooms-icon.png" alt="" />1
+                        </div>
+                    </div>
+                    <div class="featured-price">
+                        $ 320 000
+                    </div>
+                </div>
+                <div class="featured-offer-back">
+                    <div id="featured-map1" class="featured-offer-map"></div>
+                    <div class="button">
+                        <a href="estate-details-right-sidebar.html" class="button-primary">
+                            <span>read more</span>
+                            <div class="button-triangle"></div>
+                            <div class="button-triangle2"></div>
+                            <div class="button-icon"><i class="fa fa-search"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="featured-offer-col">
+                <div class="featured-offer-front">
+                    <div class="featured-offer-photo">
+                        <img src="images/featured-offer2.jpg" alt="" />
+                        <div class="type-container">
+                            <div class="estate-type">apartment</div>
+                            <div class="transaction-type">sale</div>
+                        </div>
+                    </div>
+                    <div class="featured-offer-text">
+                        <h4 class="featured-offer-title">West Fourth Street, New York 10003, USA</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="featured-offer-params">
+                        <div class="featured-area">
+                            <img src="images/area-icon.png" alt="" />70m<sup>2</sup>
+                        </div>
+                        <div class="featured-rooms">
+                            <img src="images/rooms-icon.png" alt="" />4
+                        </div>
+                        <div class="featured-baths">
+                            <img src="images/bathrooms-icon.png" alt="" />1
+                        </div>
+                    </div>
+                    <div class="featured-price">
+                        $ 350 000
+                    </div>
+                </div>
+                <div class="featured-offer-back">
+                    <div id="featured-map2" class="featured-offer-map"></div>
+                    <div class="button">
+                        <a href="estate-details-right-sidebar.html" class="button-primary">
+                            <span>read more</span>
+                            <div class="button-triangle"></div>
+                            <div class="button-triangle2"></div>
+                            <div class="button-icon"><i class="fa fa-search"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="featured-offer-col">
+                <div class="featured-offer-front">
+                    <div class="featured-offer-photo">
+                        <img src="images/featured-offer3.jpg" alt="" />
+                        <div class="type-container">
+                            <div class="estate-type">house</div>
+                            <div class="transaction-type">sale</div>
+                        </div>
+                    </div>
+                    <div class="featured-offer-text">
+                        <h4 class="featured-offer-title">500 E. Elwood St. Phoenix, AZ 85034, USA</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="featured-offer-params">
+                        <div class="featured-area">
+                            <img src="images/area-icon.png" alt="" />250m<sup>2</sup>
+                        </div>
+                        <div class="featured-rooms">
+                            <img src="images/rooms-icon.png" alt="" />7
+                        </div>
+                        <div class="featured-baths">
+                            <img src="images/bathrooms-icon.png" alt="" />3
+                        </div>
+                    </div>
+                    <div class="featured-price">
+                        $ 650 000
+                    </div>
+                </div>
+                <div class="featured-offer-back">
+                    <div id="featured-map3" class="featured-offer-map"></div>
+                    <div class="button">
+                        <a href="estate-details-right-sidebar.html" class="button-primary">
+                            <span>read more</span>
+                            <div class="button-triangle"></div>
+                            <div class="button-triangle2"></div>
+                            <div class="button-icon"><i class="fa fa-search"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="featured-offer-col">
+                <div class="featured-offer-front">
+                    <div class="featured-offer-photo">
+                        <img src="images/featured-offer4.jpg" alt="" />
+                        <div class="type-container">
+                            <div class="estate-type">apartment</div>
+                            <div class="transaction-type">sale</div>
+                        </div>
+                    </div>
+                    <div class="featured-offer-text">
+                        <h4 class="featured-offer-title">N. Willamette Blvd., Portland, OR 97203-5798, USA</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="featured-offer-params">
+                        <div class="featured-area">
+                            <img src="images/area-icon.png" alt="" />40m<sup>2</sup>
+                        </div>
+                        <div class="featured-rooms">
+                            <img src="images/rooms-icon.png" alt="" />2
+                        </div>
+                        <div class="featured-baths">
+                            <img src="images/bathrooms-icon.png" alt="" />1
+                        </div>
+                    </div>
+                    <div class="featured-price">
+                        $ 299 000
+                    </div>
+                </div>
+                <div class="featured-offer-back">
+                    <div id="featured-map4" class="featured-offer-map"></div>
+                    <div class="button">
+                        <a href="estate-details-right-sidebar.html" class="button-primary">
+                            <span>read more</span>
+                            <div class="button-triangle"></div>
+                            <div class="button-triangle2"></div>
+                            <div class="button-icon"><i class="fa fa-search"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="featured-offer-col">
+                <div class="featured-offer-front">
+                    <div class="featured-offer-photo">
+                        <img src="images/featured-offer5.jpg" alt="" />
+                        <div class="type-container">
+                            <div class="estate-type">apartment</div>
+                            <div class="transaction-type">sale</div>
+                        </div>
+                    </div>
+                    <div class="featured-offer-text">
+                        <h4 class="featured-offer-title">One Brookings Drive St. Louis, Missouri 63130-4899, USA</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="featured-offer-params">
+                        <div class="featured-area">
+                            <img src="images/area-icon.png" alt="" />80m<sup>2</sup>
+                        </div>
+                        <div class="featured-rooms">
+                            <img src="images/rooms-icon.png" alt="" />3
+                        </div>
+                        <div class="featured-baths">
+                            <img src="images/bathrooms-icon.png" alt="" />1
+                        </div>
+                    </div>
+                    <div class="featured-price">
+                        $ 390 000
+                    </div>
+                </div>
+                <div class="featured-offer-back">
+                    <div id="featured-map5" class="featured-offer-map"></div>
+                    <div class="button">
+                        <a href="estate-details-right-sidebar.html" class="button-primary">
+                            <span>read more</span>
+                            <div class="button-triangle"></div>
+                            <div class="button-triangle2"></div>
+                            <div class="button-icon"><i class="fa fa-search"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="featured-offer-col">
+                <div class="featured-offer-front">
+                    <div class="featured-offer-photo">
+                        <img src="images/featured-offer6.jpg" alt="" />
+                        <div class="type-container">
+                            <div class="estate-type">apartment</div>
+                            <div class="transaction-type">sale</div>
+                        </div>
+                    </div>
+                    <div class="featured-offer-text">
+                        <h4 class="featured-offer-title">One Neumann Drive Aston, Philadelphia 19014-1298, USA</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="featured-offer-params">
+                        <div class="featured-area">
+                            <img src="images/area-icon.png" alt="" />54m<sup>2</sup>
+                        </div>
+                        <div class="featured-rooms">
+                            <img src="images/rooms-icon.png" alt="" />3
+                        </div>
+                        <div class="featured-baths">
+                            <img src="images/bathrooms-icon.png" alt="" />1
+                        </div>
+                    </div>
+                    <div class="featured-price">
+                        $ 320 000
+                    </div>
+                </div>
+                <div class="featured-offer-back">
+                    <div id="featured-map6" class="featured-offer-map"></div>
+                    <div class="button">
+                        <a href="estate-details-right-sidebar.html" class="button-primary">
+                            <span>read more</span>
+                            <div class="button-triangle"></div>
+                            <div class="button-triangle2"></div>
+                            <div class="button-icon"><i class="fa fa-search"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="featured-offer-col">
+                <div class="featured-offer-front">
+                    <div class="featured-offer-photo">
+                        <img src="images/featured-offer7.jpg" alt="" />
+                        <div class="type-container">
+                            <div class="estate-type">house</div>
+                            <div class="transaction-type">sale</div>
+                        </div>
+                    </div>
+                    <div class="featured-offer-text">
+                        <h4 class="featured-offer-title">200 South Dr, Fort Collins, Colorado 80523, USA</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="featured-offer-params">
+                        <div class="featured-area">
+                            <img src="images/area-icon.png" alt="" />54m<sup>2</sup>
+                        </div>
+                        <div class="featured-rooms">
+                            <img src="images/rooms-icon.png" alt="" />3
+                        </div>
+                        <div class="featured-baths">
+                            <img src="images/bathrooms-icon.png" alt="" />1
+                        </div>
+                    </div>
+                    <div class="featured-price">
+                        $ 320 000
+                    </div>
+                </div>
+                <div class="featured-offer-back">
+                    <div id="featured-map7" class="featured-offer-map"></div>
+                    <div class="button">
+                        <a href="estate-details-right-sidebar.html" class="button-primary">
+                            <span>read more</span>
+                            <div class="button-triangle"></div>
+                            <div class="button-triangle2"></div>
+                            <div class="button-icon"><i class="fa fa-search"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team section-light section-both-shadow">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-3 col-sm-6 text-center">
+                <h5 class="subtitle-margin">meet our</h5>
+                <h1>proffesional team<span class="special-color">.</span></h1>
+            </div>
+            <div class="col-xs-12 col-sm-3 navigation-box2-cont">
+                <a href="#" class="navigation-box2 navigation-box-next secondary" id="team-owl-next"><div class="navigation-triangle"></div><div class="navigation-box-icon2"><i class="jfont">&#xe802;</i></div></a>
+                <a href="#" class="navigation-box2 navigation-box-prev secondary" id="team-owl-prev"><div class="navigation-triangle"></div><div class="navigation-box-icon2"><i class="jfont">&#xe800;</i></div></a>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-offset-4 col-sm-4">
+                <div class="title-separator-primary2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="team-container">
+        <div class="owl-carousel" id="team-owl">
+            <div class="team-member-cont">
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="images/agent1.jpg" alt="" />
+                        <div class="big-triangle"></div>
+                        <div class="big-triangle2"></div>
+                        <a class="big-icon big-icon-plus" href="agent-right-sidebar.html"><i class="jfont">&#xe804;</i></a>
+                        <div class="team-description">
+                            <div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                    <span>(0)-123-456-789</span>
+                                </div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-envelope fa-sm"></i>
+                                    </span>
+                                    <span>apartment@domain.tld</span>
+                                </div>
+                                <div class="team-social-cont">
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="team-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-name">
+                        <h5>manager</h5>
+                        <h4>Mark Smith<span class="special-color">.</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member-cont">
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="images/agent2.jpg" alt="" />
+                        <div class="big-triangle"></div>
+                        <div class="big-triangle2"></div>
+                        <a class="big-icon big-icon-plus" href="agent-right-sidebar.html"><i class="jfont">&#xe804;</i></a>
+                        <div class="team-description">
+                            <div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                    <span>(0)-123-456-789</span>
+                                </div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-envelope fa-sm"></i>
+                                    </span>
+                                    <span>apartment@domain.tld</span>
+                                </div>
+                                <div class="team-social-cont">
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="team-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-name">
+                        <h5>Agent</h5>
+                        <h4>Michelle Jackson<span class="special-color">.</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member-cont">
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="images/agent3.jpg" alt="" />
+                        <div class="big-triangle"></div>
+                        <div class="big-triangle2"></div>
+                        <a class="big-icon big-icon-plus" href="agent-right-sidebar.html"><i class="jfont">&#xe804;</i></a>
+                        <div class="team-description">
+                            <div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                    <span>(0)-123-456-789</span>
+                                </div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-envelope fa-sm"></i>
+                                    </span>
+                                    <span>apartment@domain.tld</span>
+                                </div>
+                                <div class="team-social-cont">
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="team-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-name">
+                        <h5>specialist</h5>
+                        <h4>Robert Duncan<span class="special-color">.</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member-cont">
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="images/agent4.jpg" alt="" />
+                        <div class="big-triangle"></div>
+                        <div class="big-triangle2"></div>
+                        <a class="big-icon big-icon-plus" href="agent-right-sidebar.html"><i class="jfont">&#xe804;</i></a>
+                        <div class="team-description">
+                            <div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                    <span>(0)-123-456-789</span>
+                                </div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-envelope fa-sm"></i>
+                                    </span>
+                                    <span>apartment@domain.tld</span>
+                                </div>
+                                <div class="team-social-cont">
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="team-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-name">
+                        <h5>agent</h5>
+                        <h4>Veronica Green<span class="special-color">.</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member-cont">
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="images/agent5.jpg" alt="" />
+                        <div class="big-triangle"></div>
+                        <div class="big-triangle2"></div>
+                        <a class="big-icon big-icon-plus" href="agent-right-sidebar.html"><i class="jfont">&#xe804;</i></a>
+                        <div class="team-description">
+                            <div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                    <span>(0)-123-456-789</span>
+                                </div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-envelope fa-sm"></i>
+                                    </span>
+                                    <span>apartment@domain.tld</span>
+                                </div>
+                                <div class="team-social-cont">
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="team-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-name">
+                        <h5>agent</h5>
+                        <h4>Timothe Lee<span class="special-color">.</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member-cont">
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="images/agent6.jpg" alt="" />
+                        <div class="big-triangle"></div>
+                        <div class="big-triangle2"></div>
+                        <a class="big-icon big-icon-plus" href="agent-right-sidebar.html"><i class="jfont">&#xe804;</i></a>
+                        <div class="team-description">
+                            <div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                    <span>(0)-123-456-789</span>
+                                </div>
+                                <div class="team-desc-line">
+                                    <span class="team-icon-circle">
+                                        <i class="fa fa-envelope fa-sm"></i>
+                                    </span>
+                                    <span>apartment@domain.tld</span>
+                                </div>
+                                <div class="team-social-cont">
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="team-icon-circle" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="team-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-name">
+                        <h5>agent</h5>
+                        <h4>Joanne Doe<span class="special-color">.</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
